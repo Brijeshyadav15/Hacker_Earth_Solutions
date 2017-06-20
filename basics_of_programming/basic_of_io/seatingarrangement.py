@@ -1,0 +1,43 @@
+t=int(input())
+ni=[]
+ans=0
+for i in range(0,t):
+    n=int(input())
+    ni.append(n)
+for i in range(0,t):
+    if(ni[i]%12==0):
+        ans=ni[i]-11
+        print(ans,"WS")
+    elif(ni[i]%12==11):
+        ans=ni[i]-9
+        print(ans,"MS")
+    elif(ni[i]%12==10):
+        ans=ni[i]-7
+        print(ans,"AS")
+    elif(ni[i]%12==9):
+        ans=ni[i]-5
+        print(ans,"AS")
+    elif(ni[i]%12==8):
+        ans=ni[i]-3
+        print(ans,"MS")
+    elif(ni[i]%12==7):
+        ans=ni[i]-1
+        print(ans,"WS")
+    elif(ni[i]%12==6):
+        ans=ni[i]+1
+        print(ans,"WS")
+    elif(ni[i]%12==5):
+        ans=ni[i]+3
+        print(ans,"MS")
+    elif(ni[i]%12==4):
+        ans=ni[i]+5
+        print(ans,"AS")
+    elif(ni[i]%12==3):
+        ans=ni[i]+7
+        print(ans,"AS")
+    elif(ni[i]%12==2):
+        ans=ni[i]+9
+        print(ans,"MS")
+    elif(ni[i]%12==1):
+        ans=ni[i]+11
+        print(ans,"WS")
